@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://buggg0fxaab6f" path="res://assets/new_tile_set._forest.res" id="1_0afsd"]
 [ext_resource type="PackedScene" uid="uid://chk6ofce30xd5" path="res://scenes/player.tscn" id="2_bgcxa"]
 [ext_resource type="PackedScene" uid="uid://ctqhvsafguv4c" path="res://scenes/ui.tscn" id="3_bgcxa"]
+[ext_resource type="PackedScene" uid="uid://wt3uwpwrrcav" path="res://scenes/Inventory.tscn" id="4_yj5dr"]
 
 [node name="Forest" type="Node2D" unique_id=679390222]
 
@@ -20,7 +21,7 @@ tile_set = ExtResource("1_0afsd")
 [node name="Plants" type="TileMapLayer" parent="." unique_id=803942770]
 visibility_layer = 2
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAAIAAEAAAABAAEAAAAEAAQAAAAAAAIAAAAIAAMAAAABAAIAAAADAAYAAAAAAAEAAAAIAAcAAAAAAAEAAAAGAAAAAAAAAAAAAAAMAAIAAAADAAAAAAAGAAMAAAABAAAAAAAKAAEAAQAAAAAAAQAJAAQAAQAAAAAAAgAGAAYAAQAAAAAAAgACAAIAAQAAAAAAAgADAAEAAQAAAAAAAgAFAAEAAQAAAAAAAgALAAMAAQAAAAAAAgACAAUAAQAAAAAAAgA=")
+tile_map_data = PackedByteArray("AAAIAAEAAAABAAEAAAAEAAQAAAAAAAIAAAAIAAMAAAABAAIAAAADAAYAAAAAAAEAAAAIAAcAAAAAAAEAAAAGAAAAAAAAAAAAAAAMAAIAAAADAAAAAAAGAAMAAAABAAAAAAAKAAEAAQAAAAAAAQAJAAQAAQAAAAAAAgAGAAYAAQAAAAAAAgACAAIAAQAAAAAAAgADAAEAAQAAAAAAAgAFAAEAAQAAAAAAAgALAAMAAQAAAAAAAgACAAUAAQAAAAAAAgAEAAMAAgAAAAAAAgAGAAIAAgAAAAAAAgAJAAIAAgAAAAAAAgA=")
 tile_set = ExtResource("1_0afsd")
 
 [node name="player" parent="." unique_id=1414773427 instance=ExtResource("2_bgcxa")]
@@ -31,3 +32,5 @@ position = Vector2(122, 76)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=594455780]
 color = Color(0.41568628, 0.43137255, 0.85882354, 1)
+
+[node name="Inventory" parent="." unique_id=1117694417 instance=ExtResource("4_yj5dr")]
